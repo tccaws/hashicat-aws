@@ -1,5 +1,6 @@
 module "s3_bucket" {
-  source = "terraform-aws-modules/s3-bucket/aws"
+  source  = "app.terraform.io/toddchur-org/s3-bucket/aws"
+  version = "2.8.0"
 
   bucketprefix = "toddchurchward"
   acl    = "private"
